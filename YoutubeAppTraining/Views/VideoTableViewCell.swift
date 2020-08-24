@@ -25,14 +25,12 @@ class VideoTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
     func setCell(_ v:Video){
         self.video = v
         
         self.titleLabel.text = video?.title
-        let df = DateFormatter()
-        df.dateFormat = "EEEE, MMM d, yyyy"
-        self.dateLabel.text = df.string(from: video!.published)
+        self.dateLabel.text = video!.published.getDate(format: Constants.DATE_FORMAT)
         
     // set the thumbnail
         guard self.video!.thumbnail != "" else{

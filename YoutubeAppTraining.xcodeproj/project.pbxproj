@@ -19,6 +19,9 @@
 		9C1CB84D24E877E60065C9B7 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB84C24E877E60065C9B7 /* Response.swift */; };
 		9C1CB84F24E8892D0065C9B7 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB84E24E8892D0065C9B7 /* VideoTableViewCell.swift */; };
 		9C1CB85624E891660065C9B7 /* CachManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB85524E891660065C9B7 /* CachManeger.swift */; };
+		9C9C087C24F3FE1B007EE29D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9C087B24F3FE1B007EE29D /* DetailsViewController.swift */; };
+		9C9C087F24F403D2007EE29D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9C087E24F403D2007EE29D /* WebKit.framework */; };
+		9C9C088124F40630007EE29D /* Date+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9C088024F40630007EE29D /* Date+DateFormat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		9C1CB84C24E877E60065C9B7 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		9C1CB84E24E8892D0065C9B7 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		9C1CB85524E891660065C9B7 /* CachManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachManeger.swift; sourceTree = "<group>"; };
+		9C9C087B24F3FE1B007EE29D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9C9C087E24F403D2007EE29D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9C9C088024F40630007EE29D /* Date+DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+DateFormat.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9C087F24F403D2007EE29D /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +61,7 @@
 			children = (
 				9C0E66F424E5CC1300A11CC2 /* YoutubeAppTraining */,
 				9C0E66F324E5CC1300A11CC2 /* Products */,
+				9C9C087D24F403D2007EE29D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				9C0E66F924E5CC1300A11CC2 /* ViewController.swift */,
+				9C9C087B24F3FE1B007EE29D /* DetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -121,8 +130,17 @@
 			children = (
 				9C0E670924E5DC6900A11CC2 /* Constant.swift */,
 				9C1CB85524E891660065C9B7 /* CachManeger.swift */,
+				9C9C088024F40630007EE29D /* Date+DateFormat.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9C9C087D24F403D2007EE29D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C9C087E24F403D2007EE29D /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +216,7 @@
 			files = (
 				9C0E66FA24E5CC1300A11CC2 /* ViewController.swift in Sources */,
 				9C0E66F624E5CC1300A11CC2 /* AppDelegate.swift in Sources */,
+				9C9C088124F40630007EE29D /* Date+DateFormat.swift in Sources */,
 				9C1CB85624E891660065C9B7 /* CachManeger.swift in Sources */,
 				9C0E66F824E5CC1300A11CC2 /* SceneDelegate.swift in Sources */,
 				9C0E670E24E5DEB300A11CC2 /* Model.swift in Sources */,
@@ -205,6 +224,7 @@
 				9C1CB84F24E8892D0065C9B7 /* VideoTableViewCell.swift in Sources */,
 				9C0E670C24E5DE3700A11CC2 /* Video.swift in Sources */,
 				9C1CB84D24E877E60065C9B7 /* Response.swift in Sources */,
+				9C9C087C24F3FE1B007EE29D /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

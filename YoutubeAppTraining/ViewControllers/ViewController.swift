@@ -21,14 +21,31 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
         // set te table's datasource and deleget to VC
         tableView.dataSource = self
         tableView.delegate = self
-        
+        tableView.backgroundColor = .clear
         // set the model's delegate to VC
         model.delegate = self
         
         // get videos
         model.getVideos()
     }
-
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = .clear
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // confirm a video is selected
+        guard tableView.indexPathForSelectedRow != nil else {
+            return
+        }
+        
+        // get a refrence to the video that was tapped
+        let selectedVideo  = videos[tableView.indexPathForSelectedRow!.row]
+        
+        /// get a refrence to a detail view controller
+        let detailVC = segue.destination as! DetailsViewController
+        detailVC.video = selectedVideo
+        
+        // set the video property of the detail view controller
+    }
     // MARK: - TableView Data Source protocol methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return videos.count
